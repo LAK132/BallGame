@@ -126,7 +126,7 @@ struct vertex
 		  }};
 	}
 
-	static lak::array<GLuint, 4U> attribute_locations(
+	static lak::array<GLuint, 4U> attribute_indices(
 	  const lak::opengl::program &shader,
 	  const GLchar *pos_name,
 	  const GLchar *col_name,
@@ -134,10 +134,10 @@ struct vertex
 	  const GLchar *tex_coord_name)
 	{
 		return lak::array<GLuint, 4U>{
-		  shader.assert_attrib_location(pos_name),
-		  shader.assert_attrib_location(col_name),
-		  shader.assert_attrib_location(norm_name),
-		  shader.assert_attrib_location(tex_coord_name),
+		  shader.assert_attrib_index(pos_name),
+		  shader.assert_attrib_index(col_name),
+		  shader.assert_attrib_index(norm_name),
+		  shader.assert_attrib_index(tex_coord_name),
 		};
 	}
 };
@@ -157,7 +157,7 @@ lak::shared_ptr<lak::opengl::static_object_part> make_mesh(
 	  lak::opengl::static_object_part::create(
 	    buffer,
 	    shader,
-	    vertex::attribute_locations(
+	    vertex::attribute_indices(
 	      *shader, "vPosition", "vColor", "vNormal", "vTexCoord"),
 	    {{albedo, shader->assert_uniform_location("albedo")}}));
 }
