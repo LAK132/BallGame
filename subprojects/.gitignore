@@ -1,0 +1,17 @@
+packagecache/**
+
+glm/
+imgui/
+lua/
+lua-5.4.4/
+SDL2/
+stb/
+*-wrap/
+
+glm*.wrap
+imgui*.wrap
+lmdb*.wrap
+lua*.wrap
+SDL2*.wrap
+stb*.wrap
+*-wrap.wrap
