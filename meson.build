@@ -42,6 +42,7 @@ else
     '-Wno-pragma-pack',
     '-Wno-deprecated-declarations',
     '-Wno-unused-private-field',
+    '-Wno-missing-field-initializers',
     '-Wfatal-errors',
     # '-mavx',
   ]
