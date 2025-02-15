@@ -2,7 +2,7 @@
 
 option('lak_enable_tests',
 	type: 'boolean',
-	value: true,
+	value: false,
 	yield: false,
 )
 
@@ -16,7 +16,7 @@ option('lak_enable_windowing',
 
 option('lak_use_native_file_dialog',
 	type: 'boolean',
-	value: true,
+	value: false,
 	yield: false,
 )
 
@@ -129,13 +129,13 @@ option('lak_enable_libgphoto2',
 
 option('lak_enable_stb',
 	type: 'boolean',
-	value: true,
+	value: false,
 	yield: false,
 )
 
 option('lak_enable_stb_image',
 	type: 'boolean',
-	value: true,
+	value: false,
 	yield: false,
 )
 
